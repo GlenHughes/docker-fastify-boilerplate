@@ -1,0 +1,9 @@
+body {
+  background-color: red;
+  color: white;
+}
+
+#app {
+  background-color: white;
+  border: solid 2px silver;
+}
