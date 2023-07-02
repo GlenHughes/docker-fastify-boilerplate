@@ -1,7 +1,7 @@
 {
-  "name": "docker-training",
+  "name": "docker-fastify-boilerplate",
   "version": "1.0.0",
-  "description": "docker training example application",
+  "description": "docker fastify boilerplate app",
   "author": {
     "name": "Glen Hughes",
     "email": "glen.hughes@iproov.com"
