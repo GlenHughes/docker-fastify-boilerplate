@@ -6,9 +6,16 @@
     "name": "Glen Hughes",
     "email": "glen.hughes@iproov.com"
   },
+  "type": "module",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
