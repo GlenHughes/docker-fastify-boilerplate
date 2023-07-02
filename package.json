@@ -1,0 +1,14 @@
+{
+  "name": "docker-training",
+  "version": "1.0.0",
+  "description": "docker training example application",
+  "author": {
+    "name": "Glen Hughes",
+    "email": "glen.hughes@iproov.com"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
