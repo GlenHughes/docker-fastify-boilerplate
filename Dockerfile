@@ -9,7 +9,9 @@ COPY yarn.lock ./
 
 COPY src/ src/
 
-RUN yarn
+RUN yarn && yarn bundle
+
+COPY dist/ .
 
 COPY server/ server/
 RUN cd server && yarn

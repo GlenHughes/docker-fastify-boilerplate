@@ -11,7 +11,10 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server/server.js",
-    "bundle": "esbuild src/app.js --bundle --outfile=dist/app.bundle.js --minify --sourcemap"
+    "bundle-js": "esbuild src/app.js --bundle --outfile=dist/js/app.bundle.js --minify --sourcemap",
+    "bundle-css": "esbuild src/css/main.css --bundle --outfile=dist/css/main.css --minify --sourcemap",
+    "copy-html": "cp src/index.html dist/index.html",
+    "bundle": "yarn bundle-js && yarn bundle-css && yarn copy-html"
   },
   "dependencies": {
     "fastify": "^4.19.0"
