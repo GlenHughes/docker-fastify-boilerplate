@@ -10,12 +10,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server/server.js"
+    "start": "nodemon server/server.js",
+    "bundle": "esbuild src/app.js --bundle --outfile=dist/app.bundle.js --minify --sourcemap"
   },
   "dependencies": {
     "fastify": "^4.19.0"
   },
   "devDependencies": {
+    "esbuild": "^0.18.11",
     "nodemon": "^2.0.22"
   }
 }
