@@ -1,7 +1,6 @@
 FROM alpine:3.18.2
 
-# NOTE: nodejs 16.13.0
-RUN apk --no-cache add nodejs yarn --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+RUN apk --no-cache add yarn
 
 WORKDIR /var/app
 
