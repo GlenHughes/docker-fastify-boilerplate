@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  node-server:
+    env_file:
+      - ./server/.env
+    build:
+      context: ./server/
+      dockerfile: ./Dockerfile
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    network_mode: host # make sure 'localhost' is accessible
+    command: yarn start
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    network_mode: host

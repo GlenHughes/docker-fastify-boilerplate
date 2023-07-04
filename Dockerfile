@@ -1,6 +1,4 @@
-FROM alpine:3.18.2
-
-RUN apk --no-cache add yarn
+FROM node:16.3.0-alpine
 
 WORKDIR /var/app
 
@@ -12,10 +10,3 @@ COPY src/ src/
 RUN yarn && yarn bundle
 
 COPY dist/ .
-
-COPY server/ server/
-RUN cd server && yarn
-
-CMD ["yarn", "start"]
-
-EXPOSE 3000

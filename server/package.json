@@ -1,0 +1,22 @@
+{
+  "name": "docker-fastify-boilerplate-server",
+  "version": "1.0.0",
+  "description": "docker fastify boilerplate server",
+  "author": {
+    "name": "Glen Hughes",
+    "email": "glen.hughes@iproov.com"
+  },
+  "type": "module",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.19.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.11",
+    "nodemon": "^2.0.22"
+  }
+}
